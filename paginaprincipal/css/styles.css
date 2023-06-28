@@ -1,0 +1,242 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(9, 150, 143);
+}
+
+form{
+    background-color: yellow;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 35px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.tituloform{
+    color: blue;
+    font-size: 30px;
+}
+
+label{
+    color: blue;
+    font-size: 15;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input{
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 2px solid wheat;
+    color: blue;
+    outline: none;
+
+}
+
+.form-txt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.form-txt a {
+    font-size: 14px;
+    font-weight: 600px;
+    text-decoration: none;
+}
+
+.btn{
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    border: 0;
+    border-radius: 25px;
+    background-color: #51d94c;
+    box-shadow: 0 0 25px rgba(25, 254, 0, 0.4);  
+    cursor: pointer; 
+}
+
+.btn:hover{
+    background-color: black;
+}
+
+.tituloP{
+    color: yellow; 
+    font-size: 30px;
+}
+
+.NavP{
+    display: inline-block;
+    background: blue;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.NavP:hover{
+    background: rgb(91, 136, 136);
+}
+
+nav{
+    display:flex;
+    justify-content: space-around;
+    background: yellow;
+    padding: 10px;
+}
+
+.Boton-Menu{
+    background: blue;
+    color: white;
+    padding: 10px 30px;
+    border: 2px solid black;
+    display: none;
+
+}
+
+.Boton-Menu:hover{
+    background: rgb(91, 136, 136);
+}
+
+
+@media (max-width: 600px){
+    nav{
+        display:flex;
+        flex-direction:column;
+        background: yellow;
+        padding: 10px;
+    }
+
+    .NavP{
+        margin: 5px 0px;
+    }
+    .Boton-Menu{
+        display: inline-block;
+    }
+    .Desaparece{
+        display: none;
+    }
+}
+
+img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 35px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 2px solid wheat;
+    color: blue;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+.carrousel {
+  width: 80%;
+  max-width: 120em;
+  padding: 2em;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--blanco);
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  overflow: hidden;
+}
+
+.carrousel .grande {
+  width: 400%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--blanco);
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  padding: 2em;
+  transition: all 0.5s ease;
+  transform: translateX(0%);
+}
+
+.carrousel .img {
+  width: calc( 100% / 4 - 2em);
+  min-height: 10vh;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--blanco);
+  box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+.carrousel .puntos {
+  width: 100%;
+  margin: 1em 0 0;
+  padding: 0.4em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrousel .punto {
+  width: 2em;
+  height: 2em;
+  margin: 1em 1em 0;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--blanco);
+  box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+.carrousel .punto.activo {
+  background-color: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+  }
+
+  :root {
+    --negro: #393939;
+    --blanco: #ececec;
+    --sombra-ppal: #c9c9c9;
+    --sombra-sec: #ffffff;
+    --borde-negro: #00000050;
+    --marcado: rgb(127, 195, 255);
+    
+  }
+
+.imga{
+    text-align:center;
+}

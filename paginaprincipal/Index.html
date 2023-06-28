@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Imperio del Parabrisa</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/form.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <!-- Este es el titulo  -->
+    <h1 class="tituloP">El Imperio Del Parabrisa C.A</h1>
+
+    </header>
+
+    <nav>
+        <!-- Este es el menu de navegacion -->
+        <button class="Boton-Menu" onclick="accion()">Menu</button>
+        <a href="Index.html" class="NavP Desaparece">Inicio</a>
+        <a href="Productos.html" class="NavP Desaparece">Lista De Productos</a>
+        
+    </nav>
+
+    <section>
+        <h2>Bienvenidos a nuestra pagina de ventas de accesorios para vehiculos</h2>
+        
+        <img class="imga" src="img/imperio.jpg" alt="logo">
+        
+        <p>Aqui en nuestra pagina podemos ayudarte tanto en la compra de accesorios de tu vehiculo como en la instalacion de los mismos</p>
+        
+        <p>Para mas informacion deja tus datos aqui abajo y se te enviara personalmente una lista de precios mas detallada</p>
+   
+    </section>  
+      
+    <form>
+        <div class="input-group">
+            <h2 class="tituloform">Ingresa tus datos</h2>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+            <label for="correo">Correo</label>
+            <input type="email" name="correo" id="correo" placeholder="Correo">
+            <label for="telefono">Telefono</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="Telefono">
+                <div class="form-txt">
+                    <a href="https://www.facebook.com/privacy/policy/">Politicas de privacidad</a>
+                    <a href="https://www.amazon.com/-/es/gp/help/customer/display.html?nodeId=201983050">Terminos y condiciones</a>
+                </div>
+            <input class="btn" type="submit" id="boton_lanzar" value="Enviar">
+ 
+        </div>
+    </form>
+
+
+<script>
+
+    function accion(){
+     var ancla = document.getElementsByClassName('NavP');
+     for (var i = 0; i < ancla.length; i++) {
+         ancla[i].classList.toggle("Desaparece");
+     }
+    }
+</script>
+
+</body>
+</html>

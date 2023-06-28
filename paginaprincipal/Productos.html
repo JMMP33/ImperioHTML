@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Imperio del Parabrisa</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/app.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+    
+</head> 
+<body>
+    <header>
+    <h1 class="tituloP">El Imperio Del Parabrisa C.A</h1>
+
+    </header>
+
+    <nav>
+        <button class="Boton-Menu" onclick="accion()">Menu</button>
+        <a href="Index.html" class="NavP Desaparece">Inicio</a>
+        <a href="Tabla_Precios_Vidrios.html" class="NavP Desaparece">Vidrios</a>
+        <a href="Tabla_Precios_Manillas.html" class="NavP Desaparece">Manillas</a>
+        <a href="Tabla_Precios_Luces.html" class="NavP Desaparece">Luces LED</a>
+    </nav>
+
+<section>
+<h2>PRODUCTOS</h2>
+
+<p>En este apartado puedes encontrar alguno de nuestros productos y tambien poder ver la calidad de los mismos</p>
+
+    <h3>Algunos de estos son:</h3>
+    <p>Manillas de vehiculos variados, faros tanto delanteros como traseros, parabrisas de cualquier puerta del carro, en el siguiente apartado pueden ver algunas imagenes de las mismas
+    </p>
+    
+    
+    
+
+        <div class="carrousel">
+            <div class="grande">
+                <img src="img/faro.jpg" alt="Imagen 1" class="img">
+                <img src="img/manilla.jpg" alt="Imagen 2" class="img">
+                <img src="img/parabrids.jpg" alt="Imagen 3" class="img">
+                <img src="img/descargar.jpg" alt="Imagen 4" class="img">
+            </div>
+    
+            <ul class="puntos">
+                <li class="punto activo"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+            </ul>
+        </div>
+
+
+
+
+</section>
+
+
+<script>
+    function accion(){
+     var ancla = document.getElementsByClassName('NavP');
+     for (var i = 0; i < ancla.length; i++) {
+         ancla[i].classList.toggle("Desaparece");
+     }
+    }
+</script>
+
+</body>
+</html>
